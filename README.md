@@ -17,6 +17,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
+![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg)
 
 <!-- PROJECT LOGO -->
 <br />
@@ -46,8 +47,11 @@
 
 * [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Live Version](#live-version)
-* [Contact](#contact)
+  * [Usage](#usage)
+  * [Live Demo](#live-demo)
+  * [Automated Test](#automated-test)
+* [Author](#author)
+* [Contributing](#contributing)
 * [Acknowledgements](#acknowledgements)
 
 <!-- ABOUT THE PROJECT -->
@@ -61,11 +65,6 @@ This is also part of the Odin project curriculum https://www.theodinproject.com/
 
 And the second chapter of the Learn enough to be dangerous tutorial https://www.learnenough.com/ruby-on-rails-4th-edition-tutorial/toy_app#sec-planning_the_application
 
-<!-- ABOUT THE PROJECT -->
-## Instalation
-
-If you want to see it you just need to have a web browser and folow this [link](https://rails-toy-app-audreynmaru.herokuapp.com/)
-
 ### Built With
 This project was built using these technologies.
 * Ruby 2.5.7
@@ -76,20 +75,63 @@ This project was built using these technologies.
 * VsCode
 * Notepad++
 
-<!-- LIVE VERSION -->
-## Live version
+<!-- ABOUT THE PROJECT -->
+### Usage
 
-You can see the clone here:  https://rails-toy-app-audreynmaru.herokuapp.com/
+If you want to test it you need to have Ruby and Rails installed in your computer and [download](https://github.com/euqueme/toy-app/archive/master.zip) or clone this repo as follows:
+* `$ git clone "https://github.com/euqueme/toy-app.git"`
+
+after that you need to open a terminal inside the repo and run the bundler
+* `$ bundle  install --without production`
+
+then, run rails db:migrate. This creates the database with the corresponding tables, columns and associations.
+* `$ rails db:migrate`
+
+and finally, you can test it in the console using the sandbox with the following command
+* `$ rails server`
+
+If no errors were displayed open a browser in your [localhost](http://localhost:3000/) and you should be able create new users, edit and destroy them 
+
+
+![screenshot](app/assets/images/toy_app_users.png)
+
+If you want to create new microposts, edit or destoy them you have to go to the [microposts](http://localhost:3000/microposts) page
+
+![screenshot](app/assets/images/toy_app_microposts.png)
+
+<!-- LIVE VERSION -->
+### Live Demo
+
+You can see it working here:  https://rails-toy-app-audreynmaru.herokuapp.com/
+
+<!-- AUTOMATED TEST -->
+### Automated Test
+
+> There are no Automated Test for this project yet
 
 <!-- CONTACT -->
-## Contact
+## Author
 
-Audrey Emmanuella Odiaka - [@o___audrey_xo](https://twitter.com/o___audrey_xo) - [@audrey-ella-xo](https://github.com/audrey-ella-xo) - anitaudrey@gmail.com
-<br />
-<br />
-María Eugenia Quemé - [@MaruKK](https://twitter.com/MaruKK) - [@euqueme](https://github.com/euqueme) - euqueme@gmail.com
+👤 **Audrey Emmanuella Odiaka** 
+- Twitter: [@o___audrey_xo](https://twitter.com/o___audrey_xo) 
+- Github: [@audrey-ella-xo](https://github.com/audrey-ella-xo) 
+- Gmail: anitaudrey@gmail.com
 
-Project Link: [https://github.com/euqueme/toy-app)
+👤 **María Eugenia Quemé** 
+
+- Twitter: [@MaruKK](https://twitter.com/MaruKK) 
+- Github: [@euqueme](https://github.com/euqueme) 
+- Gmail: euqueme@gmail.com
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/euqueme/micro-reddit/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
